@@ -36,3 +36,9 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+*storybook.log
+storybook-static
+
+# Auto-generated files
+libraries/design-system/src/components/index.tsx

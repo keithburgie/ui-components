@@ -1,135 +1,63 @@
-# Turborepo starter
+# Scalable UI: Tailwind v4 & Design Tokens
 
-This Turborepo starter is maintained by the Turborepo core team.
+> **Note to Reviewers:** This project was created specifically to demonstrate the skills required for the Senior UI Engineer role at CoStar Group, focusing on **scalable component architecture**, **semantic design tokens** (Tailwind v4), and **accessibility**.
 
-## Using this example
+## ⚡️ Quick Start
 
-Run the following command:
+This project uses **Turborepo** to orchestrate the monorepo.
 
-```sh
-npx create-turbo@latest
-```
-
-## What's inside?
-
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
+### 1. Installation
 
 ```
-cd my-turborepo
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build
-yarn dlx turbo build
-pnpm exec turbo build
+git clone git@github.com:keithburgie/ui-components.git
+cd ui-components
+npm install
 ```
 
-You can build a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
+### 2. Run the Environment
+
+Run the full stack (App + Storybook + Watchers) with a single command:
 
 ```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build --filter=docs
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build --filter=docs
-yarn exec turbo build --filter=docs
-pnpm exec turbo build --filter=docs
+npx turbo run dev
 ```
 
-### Develop
+This concurrently launches:
 
-To develop all apps and packages, run the following command:
+- **Consumer App:** [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000 "null") (Next.js Dashboard)
+- **Design System Workbench:** [http://localhost:6006](https://www.google.com/search?q=http://localhost:6006 "null") (Storybook)
+- **Library Watch:** Automatically rebuilds the design system on file changes.
 
-```
-cd my-turborepo
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev
-yarn exec turbo dev
-pnpm exec turbo dev
-```
-
-You can develop a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
+### 3. Other Commands
 
 ```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev --filter=web
+# Run unit tests (Vitest)
+npx turbo run test
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev --filter=web
-yarn exec turbo dev --filter=web
-pnpm exec turbo dev --filter=web
+# Build all packages for production
+npx turbo run build
 ```
 
-### Remote Caching
+## 🏗️ Architecture & Features
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+- **Orchestration:** Monorepo via Turborepo & npm workspaces.
+- **Design System (`@ui/design-system`):** A standalone package containing:
+  - **Tokens:** Tailwind v4 CSS variables (Primitives vs. Semantic aliases).
+  - **Components:** Headless logic (Radix UI inspired) + Tailwind Variants (tv) for styling.
+- **Consumer App:** A Next.js App Router application that consumes the design system via the workspace protocol.
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo login
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo login
-yarn exec turbo login
-pnpm exec turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+## 📂 Project Structure
 
 ```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo link
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo link
-yarn exec turbo link
-pnpm exec turbo link
+root/
+├── apps/
+│   └── consumer-app/         # 🧠 The Next.js Dashboard (Consumer)
+│
+├── libraries/
+│   └── design-system/        # 📦 The Component Library (Producer)
+│       ├── src/tokens/       # Raw OKLCH values & Semantic Aliases
+│       └── src/components/   # React Components
+│
+├── tooling/                  # 🔧 Shared ESLint & TS Configs
+└── turbo.json                # Pipeline configuration
 ```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)

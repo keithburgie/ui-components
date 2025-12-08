@@ -1,0 +1,21 @@
+@theme {
+  /* Note: Most "primitive" tokens are defined by Tailwind itself. */
+
+  --color-brand-blue: oklch(0.63 0.18 250);
+  --color-brand-blue-100: oklch(0.8 0.18 250);
+  --color-brand-blue-200: oklch(0.7 0.18 250);
+  --color-brand-blue-300: oklch(0.75 0.18 250);
+  --color-brand-blue-400: oklch(0.65 0.18 250);
+  --color-brand-blue-500: oklch(0.63 0.18 250);
+  --color-brand-blue-600: oklch(0.55 0.18 250);
+  --color-brand-blue-700: oklch(0.45 0.18 250);
+  --color-brand-blue-800: oklch(0.35 0.18 250);
+  --color-brand-blue-900: oklch(0.25 0.18 250);
+
+  --color-destructive-500: oklch(0.63 0.22 25);
+  --color-destructive-600: oklch(0.55 0.22 25);
+
+  /* Custom Font Sizes */
+  --text-xxs: 0.625rem;
+  --text-xxs--line-height: 1rem;
+}

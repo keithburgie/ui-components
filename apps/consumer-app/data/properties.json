@@ -1,0 +1,769 @@
+[
+  {
+    "id": "prop_8823_ne",
+    "listingType": "FOR_SALE",
+    "propertyType": "OFFICE",
+    "status": "ACTIVE",
+    "title": "Skyline Innovation Center - Class A Office Space",
+    "slug": "skyline-innovation-center-richmond",
+    "description": "Premium Class A office building located in the heart of the Tech District. Recently renovated lobby and HVAC systems. Ideal for corporate headquarters.",
+    "location": {
+      "address": "4500 Tech Park Blvd",
+      "city": "Richmond",
+      "state": "VA",
+      "zipCode": "23230",
+      "county": "Henrico",
+      "coordinates": {
+        "latitude": 37.5407,
+        "longitude": -77.436
+      }
+    },
+    "specifications": {
+      "buildingClass": "A",
+      "yearBuilt": 2012,
+      "yearRenovated": 2023,
+      "totalBuildingAreaSqFt": 45000,
+      "rentableAreaSqFt": 42500,
+      "lotSizeAcres": 3.5,
+      "floors": 4,
+      "zoningCode": "M-1",
+      "parking": {
+        "ratio": 4.5,
+        "spaces": 200,
+        "type": "Surface and Covered Structure"
+      }
+    },
+    "financials": {
+      "salePrice": 12500000,
+      "pricePerSqFt": 277.77,
+      "netOperatingIncome": 850000,
+      "capRatePercentage": 6.8,
+      "occupancyRatePercentage": 85,
+      "leaseInfo": {
+        "leaseRate": 28,
+        "leaseRateUnit": "USD/SF/YEAR",
+        "leaseType": "NNN",
+        "minDivisibleSqFt": 2500,
+        "maxContiguousSqFt": 10000
+      }
+    },
+    "amenities": [
+      "24/7 Access",
+      "On-site Cafeteria",
+      "Conference Center",
+      "Fiber Optic Connectivity",
+      "Loading Dock"
+    ],
+    "media": [
+      {
+        "id": "img_001",
+        "type": "IMAGE",
+        "url": "/pexels-1500459.jpg",
+        "altText": "Exterior view of Skyline Innovation Center",
+        "isPrimary": true
+      },
+      {
+        "id": "img_002",
+        "type": "FLOOR_PLAN",
+        "url": "https://example.com/assets/prop_8823/floor_2.pdf",
+        "label": "2nd Floor Layout"
+      }
+    ],
+    "brokerContact": {
+      "name": "Sarah Jenkins",
+      "agency": "Prime Commercial Realty",
+      "phone": "+1-804-555-0199",
+      "email": "s.jenkins@primecommercial.example.com",
+      "licenseNumber": "VA-998877"
+    },
+    "metadata": {
+      "createdDate": "2023-10-15T08:00:00Z",
+      "lastUpdated": "2023-11-02T14:30:00Z",
+      "views": 1420
+    }
+  },
+  {
+    "id": "prop_9941_retail",
+    "listingType": "FOR_LEASE",
+    "propertyType": "RETAIL",
+    "status": "ACTIVE",
+    "title": "Carytown Boutique Corner",
+    "slug": "carytown-boutique-corner",
+    "description": "High visibility corner unit in the historic Carytown shopping district.",
+    "location": {
+      "address": "3200 W Cary St",
+      "city": "Richmond",
+      "state": "VA",
+      "zipCode": "23221",
+      "county": "Richmond City",
+      "coordinates": {
+        "latitude": 37.555,
+        "longitude": -77.48
+      }
+    },
+    "specifications": {
+      "buildingClass": "B",
+      "yearBuilt": 1950,
+      "totalBuildingAreaSqFt": 2500,
+      "rentableAreaSqFt": 2500,
+      "lotSizeAcres": 0.1,
+      "floors": 1,
+      "zoningCode": "B-3",
+      "parking": {
+        "ratio": 0,
+        "spaces": 0,
+        "type": "Street Parking"
+      }
+    },
+    "financials": {
+      "leaseInfo": {
+        "leaseRate": 35,
+        "leaseRateUnit": "USD/SF/YEAR",
+        "leaseType": "NNN",
+        "minDivisibleSqFt": 2500,
+        "maxContiguousSqFt": 2500
+      }
+    },
+    "amenities": [
+      "Storefront Window",
+      "High Foot Traffic",
+      "Signage Opportunity"
+    ],
+    "media": [
+      {
+        "id": "img_cary_1",
+        "type": "IMAGE",
+        "url": "/pexels-269077.jpg",
+        "altText": "Carytown retail storefront",
+        "isPrimary": true
+      }
+    ],
+    "brokerContact": {
+      "name": "Bill Myers",
+      "agency": "Richmond Retail Group",
+      "phone": "804-555-1234",
+      "email": "bill@example.com",
+      "licenseNumber": "VA-112233"
+    },
+    "metadata": {
+      "createdDate": "2023-12-01T09:00:00Z",
+      "lastUpdated": "2023-12-05T10:00:00Z",
+      "views": 450
+    }
+  },
+  {
+    "id": "prop_7752_ind",
+    "listingType": "FOR_SALE",
+    "propertyType": "INDUSTRIAL",
+    "status": "ACTIVE",
+    "title": "Richmond Distribution Hub - Warehouse Facility",
+    "slug": "richmond-distribution-hub-warehouse",
+    "description": "Modern distribution center with 32-foot clear height, 20 loading docks, and rail access. Ideal for logistics and manufacturing operations.",
+    "location": {
+      "address": "8900 Commerce Blvd",
+      "city": "Richmond",
+      "state": "VA",
+      "zipCode": "23236",
+      "county": "Chesterfield",
+      "coordinates": {
+        "latitude": 37.425,
+        "longitude": -77.52
+      }
+    },
+    "specifications": {
+      "buildingClass": "A",
+      "yearBuilt": 2018,
+      "totalBuildingAreaSqFt": 125000,
+      "rentableAreaSqFt": 120000,
+      "lotSizeAcres": 12.5,
+      "floors": 1,
+      "zoningCode": "M-2",
+      "parking": {
+        "ratio": 2.0,
+        "spaces": 250,
+        "type": "Surface Parking"
+      }
+    },
+    "financials": {
+      "salePrice": 18750000,
+      "pricePerSqFt": 150.0,
+      "netOperatingIncome": 1125000,
+      "capRatePercentage": 6.0,
+      "occupancyRatePercentage": 100,
+      "leaseInfo": {
+        "leaseRate": 6.5,
+        "leaseRateUnit": "USD/SF/YEAR",
+        "leaseType": "NNN",
+        "minDivisibleSqFt": 10000,
+        "maxContiguousSqFt": 120000
+      }
+    },
+    "amenities": [
+      "Rail Access",
+      "20 Loading Docks",
+      "32' Clear Height",
+      "ESFR Sprinkler System",
+      "Office Space Included",
+      "Fenced Yard"
+    ],
+    "media": [
+      {
+        "id": "img_ind_001",
+        "type": "IMAGE",
+        "url": "/pexels-3137686.jpg",
+        "altText": "Exterior view of Richmond Distribution Hub",
+        "isPrimary": true
+      },
+      {
+        "id": "img_ind_002",
+        "type": "IMAGE",
+        "url": "https://via.placeholder.com/800x600?text=Warehouse+Interior",
+        "altText": "Interior warehouse space with high ceilings"
+      }
+    ],
+    "brokerContact": {
+      "name": "Michael Chen",
+      "agency": "Industrial Properties Group",
+      "phone": "+1-804-555-2345",
+      "email": "m.chen@industrialprop.example.com",
+      "licenseNumber": "VA-445566"
+    },
+    "metadata": {
+      "createdDate": "2023-09-20T10:00:00Z",
+      "lastUpdated": "2023-11-15T16:20:00Z",
+      "views": 2100
+    }
+  },
+  {
+    "id": "prop_6631_mf",
+    "listingType": "FOR_LEASE",
+    "propertyType": "MULTIFAMILY",
+    "status": "ACTIVE",
+    "title": "Riverside Apartments - 24 Unit Complex",
+    "slug": "riverside-apartments-24-unit",
+    "description": "Well-maintained 24-unit apartment complex with river views. Recently updated kitchens and bathrooms. Strong rental history.",
+    "location": {
+      "address": "1850 Riverside Dr",
+      "city": "Richmond",
+      "state": "VA",
+      "zipCode": "23225",
+      "county": "Richmond City",
+      "coordinates": {
+        "latitude": 37.515,
+        "longitude": -77.465
+      }
+    },
+    "specifications": {
+      "buildingClass": "B",
+      "yearBuilt": 1985,
+      "yearRenovated": 2020,
+      "totalBuildingAreaSqFt": 36000,
+      "rentableAreaSqFt": 36000,
+      "lotSizeAcres": 1.8,
+      "floors": 3,
+      "zoningCode": "R-6",
+      "parking": {
+        "ratio": 1.5,
+        "spaces": 36,
+        "type": "Surface Parking"
+      }
+    },
+    "financials": {
+      "leaseInfo": {
+        "leaseRate": 1.2,
+        "leaseRateUnit": "USD/SF/MONTH",
+        "leaseType": "GROSS",
+        "minDivisibleSqFt": 750,
+        "maxContiguousSqFt": 1500
+      }
+    },
+    "amenities": [
+      "River Views",
+      "On-site Laundry",
+      "Pet Friendly",
+      "Covered Parking",
+      "Storage Units"
+    ],
+    "media": [
+      {
+        "id": "img_mf_001",
+        "type": "IMAGE",
+        "url": "/pexels-35026349.jpg",
+        "altText": "Exterior view of Riverside Apartments",
+        "isPrimary": true
+      },
+      {
+        "id": "img_mf_002",
+        "type": "IMAGE",
+        "url": "https://via.placeholder.com/800x600?text=Apartment+Interior",
+        "altText": "Updated apartment interior"
+      }
+    ],
+    "brokerContact": {
+      "name": "Jennifer Martinez",
+      "agency": "Residential Realty Partners",
+      "phone": "+1-804-555-3456",
+      "email": "j.martinez@residential.example.com",
+      "licenseNumber": "VA-778899"
+    },
+    "metadata": {
+      "createdDate": "2023-11-10T11:00:00Z",
+      "lastUpdated": "2023-12-10T09:15:00Z",
+      "views": 890
+    }
+  },
+  {
+    "id": "prop_5519_land",
+    "listingType": "FOR_SALE",
+    "propertyType": "LAND",
+    "status": "PENDING",
+    "title": "Development Ready Parcel - Short Pump Area",
+    "slug": "development-ready-parcel-short-pump",
+    "description": "Prime development site in fast-growing Short Pump corridor. Zoned for mixed-use development. All utilities available.",
+    "location": {
+      "address": "12000 W Broad St",
+      "city": "Richmond",
+      "state": "VA",
+      "zipCode": "23233",
+      "county": "Henrico",
+      "coordinates": {
+        "latitude": 37.65,
+        "longitude": -77.6
+      }
+    },
+    "specifications": {
+      "buildingClass": "A",
+      "totalBuildingAreaSqFt": 0,
+      "rentableAreaSqFt": 0,
+      "lotSizeAcres": 8.5,
+      "floors": 0,
+      "zoningCode": "C-1",
+      "parking": {
+        "ratio": 0,
+        "spaces": 0,
+        "type": "N/A"
+      }
+    },
+    "financials": {
+      "salePrice": 4250000,
+      "pricePerSqFt": 11.5
+    },
+    "amenities": [
+      "All Utilities Available",
+      "Highway Frontage",
+      "Traffic Signal Access",
+      "Sewer and Water"
+    ],
+    "media": [
+      {
+        "id": "img_land_001",
+        "type": "IMAGE",
+        "url": "/pexels-35038715.jpg",
+        "altText": "Aerial view of development parcel",
+        "isPrimary": true
+      },
+      {
+        "id": "img_land_002",
+        "type": "FLOOR_PLAN",
+        "url": "https://example.com/assets/prop_5519/site_plan.pdf",
+        "label": "Site Development Plan"
+      }
+    ],
+    "brokerContact": {
+      "name": "David Thompson",
+      "agency": "Land Development Associates",
+      "phone": "+1-804-555-4567",
+      "email": "d.thompson@landdev.example.com",
+      "licenseNumber": "VA-334455"
+    },
+    "metadata": {
+      "createdDate": "2023-08-05T14:00:00Z",
+      "lastUpdated": "2023-12-08T11:30:00Z",
+      "views": 3200
+    }
+  },
+  {
+    "id": "prop_4428_office",
+    "listingType": "FOR_LEASE",
+    "propertyType": "OFFICE",
+    "status": "ACTIVE",
+    "title": "Downtown Financial District - Class B Office Space",
+    "slug": "downtown-financial-district-office",
+    "description": "Prime downtown location with excellent access to restaurants and public transit. Recently renovated common areas and elevators.",
+    "location": {
+      "address": "901 E Main St",
+      "city": "Richmond",
+      "state": "VA",
+      "zipCode": "23219",
+      "county": "Richmond City",
+      "coordinates": {
+        "latitude": 37.543,
+        "longitude": -77.443
+      }
+    },
+    "specifications": {
+      "buildingClass": "B",
+      "yearBuilt": 1995,
+      "yearRenovated": 2021,
+      "totalBuildingAreaSqFt": 85000,
+      "rentableAreaSqFt": 78000,
+      "lotSizeAcres": 0.8,
+      "floors": 12,
+      "zoningCode": "B-4",
+      "parking": {
+        "ratio": 2.0,
+        "spaces": 170,
+        "type": "Garage Parking"
+      }
+    },
+    "financials": {
+      "leaseInfo": {
+        "leaseRate": 22,
+        "leaseRateUnit": "USD/SF/YEAR",
+        "leaseType": "MODIFIED_GROSS",
+        "minDivisibleSqFt": 1500,
+        "maxContiguousSqFt": 15000
+      }
+    },
+    "amenities": [
+      "Downtown Location",
+      "Public Transit Access",
+      "On-site Parking Garage",
+      "Modern Lobby",
+      "Conference Facilities",
+      "Near Restaurants"
+    ],
+    "media": [
+      {
+        "id": "img_office_001",
+        "type": "IMAGE",
+        "url": "/pexels-35038730.jpg",
+        "altText": "Downtown office building exterior",
+        "isPrimary": true
+      },
+      {
+        "id": "img_office_002",
+        "type": "FLOOR_PLAN",
+        "url": "https://example.com/assets/prop_4428/floor_plan.pdf",
+        "label": "Typical Floor Plan"
+      }
+    ],
+    "brokerContact": {
+      "name": "Sarah Jenkins",
+      "agency": "Prime Commercial Realty",
+      "phone": "+1-804-555-0199",
+      "email": "s.jenkins@primecommercial.example.com",
+      "licenseNumber": "VA-998877"
+    },
+    "metadata": {
+      "createdDate": "2023-10-01T08:30:00Z",
+      "lastUpdated": "2023-11-20T13:45:00Z",
+      "views": 1750
+    }
+  },
+  {
+    "id": "prop_3367_retail",
+    "listingType": "FOR_SALE",
+    "propertyType": "RETAIL",
+    "status": "SOLD",
+    "title": "Stony Point Shopping Center - Anchor Space",
+    "slug": "stony-point-shopping-center-anchor",
+    "description": "Former anchor tenant space in established shopping center. High visibility location with excellent parking. Ready for new tenant or owner-occupant.",
+    "location": {
+      "address": "9200 Stony Point Pkwy",
+      "city": "Richmond",
+      "state": "VA",
+      "zipCode": "23235",
+      "county": "Richmond City",
+      "coordinates": {
+        "latitude": 37.58,
+        "longitude": -77.52
+      }
+    },
+    "specifications": {
+      "buildingClass": "A",
+      "yearBuilt": 2003,
+      "totalBuildingAreaSqFt": 15000,
+      "rentableAreaSqFt": 15000,
+      "lotSizeAcres": 1.2,
+      "floors": 1,
+      "zoningCode": "C-2",
+      "parking": {
+        "ratio": 5.0,
+        "spaces": 75,
+        "type": "Surface Parking"
+      }
+    },
+    "financials": {
+      "salePrice": 2850000,
+      "pricePerSqFt": 190.0,
+      "netOperatingIncome": 171000,
+      "capRatePercentage": 6.0,
+      "occupancyRatePercentage": 100
+    },
+    "amenities": [
+      "Shopping Center Location",
+      "High Visibility",
+      "Ample Parking",
+      "Loading Dock",
+      "Signage Rights"
+    ],
+    "media": [
+      {
+        "id": "img_retail_001",
+        "type": "IMAGE",
+        "url": "/pexels-449559.jpg",
+        "altText": "Retail space at Stony Point Shopping Center",
+        "isPrimary": true
+      }
+    ],
+    "brokerContact": {
+      "name": "Bill Myers",
+      "agency": "Richmond Retail Group",
+      "phone": "804-555-1234",
+      "email": "bill@example.com",
+      "licenseNumber": "VA-112233"
+    },
+    "metadata": {
+      "createdDate": "2023-07-15T09:00:00Z",
+      "lastUpdated": "2023-11-30T10:00:00Z",
+      "views": 2800
+    }
+  },
+  {
+    "id": "prop_2284_ind",
+    "listingType": "FOR_LEASE",
+    "propertyType": "INDUSTRIAL",
+    "status": "ACTIVE",
+    "title": "Flex Warehouse Space - Manufacturing & Office",
+    "slug": "flex-warehouse-space-manufacturing",
+    "description": "Flexible industrial space with office component. Ideal for light manufacturing, distribution, or service businesses. 18-foot clear height.",
+    "location": {
+      "address": "5600 Midlothian Turnpike",
+      "city": "Richmond",
+      "state": "VA",
+      "zipCode": "23225",
+      "county": "Chesterfield",
+      "coordinates": {
+        "latitude": 37.505,
+        "longitude": -77.55
+      }
+    },
+    "specifications": {
+      "buildingClass": "B",
+      "yearBuilt": 2000,
+      "totalBuildingAreaSqFt": 18000,
+      "rentableAreaSqFt": 18000,
+      "lotSizeAcres": 2.0,
+      "floors": 1,
+      "zoningCode": "M-1",
+      "parking": {
+        "ratio": 2.5,
+        "spaces": 45,
+        "type": "Surface Parking"
+      }
+    },
+    "financials": {
+      "leaseInfo": {
+        "leaseRate": 8.5,
+        "leaseRateUnit": "USD/SF/YEAR",
+        "leaseType": "NNN",
+        "minDivisibleSqFt": 5000,
+        "maxContiguousSqFt": 18000
+      }
+    },
+    "amenities": [
+      "Office Space Included",
+      "18' Clear Height",
+      "Loading Dock",
+      "Drive-in Door",
+      "Fenced Yard"
+    ],
+    "media": [
+      {
+        "id": "img_flex_001",
+        "type": "IMAGE",
+        "url": "/pexels-678117.jpg",
+        "altText": "Flex warehouse and office space",
+        "isPrimary": true
+      }
+    ],
+    "brokerContact": {
+      "name": "Michael Chen",
+      "agency": "Industrial Properties Group",
+      "phone": "+1-804-555-2345",
+      "email": "m.chen@industrialprop.example.com",
+      "licenseNumber": "VA-445566"
+    },
+    "metadata": {
+      "createdDate": "2023-11-05T10:30:00Z",
+      "lastUpdated": "2023-12-01T14:20:00Z",
+      "views": 650
+    }
+  },
+  {
+    "id": "prop_1196_office",
+    "listingType": "BOTH",
+    "propertyType": "OFFICE",
+    "status": "ACTIVE",
+    "title": "Corporate Campus - Class A Office Building",
+    "slug": "corporate-campus-class-a-office",
+    "description": "Premium corporate campus building available for sale or lease. State-of-the-art facilities with on-site amenities. Ideal for large corporate tenant or owner-occupant.",
+    "location": {
+      "address": "6800 Paragon Place",
+      "city": "Richmond",
+      "state": "VA",
+      "zipCode": "23230",
+      "county": "Henrico",
+      "coordinates": {
+        "latitude": 37.56,
+        "longitude": -77.48
+      }
+    },
+    "specifications": {
+      "buildingClass": "A",
+      "yearBuilt": 2015,
+      "totalBuildingAreaSqFt": 95000,
+      "rentableAreaSqFt": 89000,
+      "lotSizeAcres": 5.2,
+      "floors": 5,
+      "zoningCode": "O-1",
+      "parking": {
+        "ratio": 5.0,
+        "spaces": 475,
+        "type": "Surface and Garage"
+      }
+    },
+    "financials": {
+      "salePrice": 28500000,
+      "pricePerSqFt": 300.0,
+      "netOperatingIncome": 1950000,
+      "capRatePercentage": 6.84,
+      "occupancyRatePercentage": 92,
+      "leaseInfo": {
+        "leaseRate": 32,
+        "leaseRateUnit": "USD/SF/YEAR",
+        "leaseType": "NNN",
+        "minDivisibleSqFt": 5000,
+        "maxContiguousSqFt": 25000
+      }
+    },
+    "amenities": [
+      "On-site Fitness Center",
+      "Conference Center",
+      "Cafeteria",
+      "Walking Trails",
+      "Fiber Optic Connectivity",
+      "EV Charging Stations"
+    ],
+    "media": [
+      {
+        "id": "img_corp_001",
+        "type": "IMAGE",
+        "url": "/pexels-936722.jpg",
+        "altText": "Corporate campus building exterior",
+        "isPrimary": true
+      },
+      {
+        "id": "img_corp_002",
+        "type": "IMAGE",
+        "url": "https://via.placeholder.com/800x600?text=Office+Interior",
+        "altText": "Modern office interior"
+      },
+      {
+        "id": "img_corp_003",
+        "type": "VIRTUAL_TOUR",
+        "url": "https://example.com/virtual-tours/prop_1196",
+        "label": "Virtual Tour"
+      }
+    ],
+    "brokerContact": {
+      "name": "Sarah Jenkins",
+      "agency": "Prime Commercial Realty",
+      "phone": "+1-804-555-0199",
+      "email": "s.jenkins@primecommercial.example.com",
+      "licenseNumber": "VA-998877"
+    },
+    "metadata": {
+      "createdDate": "2023-09-01T07:00:00Z",
+      "lastUpdated": "2023-12-12T15:00:00Z",
+      "views": 3500
+    }
+  },
+  {
+    "id": "prop_0087_mf",
+    "listingType": "FOR_SALE",
+    "propertyType": "MULTIFAMILY",
+    "status": "ACTIVE",
+    "title": "Garden Apartments - 16 Unit Investment Property",
+    "slug": "garden-apartments-16-unit",
+    "description": "Well-located garden-style apartment complex with strong cash flow. All units recently renovated. Excellent investment opportunity.",
+    "location": {
+      "address": "4200 Forest Hill Ave",
+      "city": "Richmond",
+      "state": "VA",
+      "zipCode": "23225",
+      "county": "Richmond City",
+      "coordinates": {
+        "latitude": 37.52,
+        "longitude": -77.51
+      }
+    },
+    "specifications": {
+      "buildingClass": "B",
+      "yearBuilt": 1978,
+      "yearRenovated": 2022,
+      "totalBuildingAreaSqFt": 19200,
+      "rentableAreaSqFt": 19200,
+      "lotSizeAcres": 1.5,
+      "floors": 2,
+      "zoningCode": "R-5",
+      "parking": {
+        "ratio": 1.25,
+        "spaces": 20,
+        "type": "Surface Parking"
+      }
+    },
+    "financials": {
+      "salePrice": 2400000,
+      "pricePerSqFt": 125.0,
+      "netOperatingIncome": 144000,
+      "capRatePercentage": 6.0,
+      "occupancyRatePercentage": 100
+    },
+    "amenities": [
+      "Renovated Units",
+      "On-site Laundry",
+      "Pet Friendly",
+      "Off-street Parking",
+      "Storage"
+    ],
+    "media": [
+      {
+        "id": "img_garden_001",
+        "type": "IMAGE",
+        "url": "/pexels-998499.jpg",
+        "altText": "Garden apartments exterior",
+        "isPrimary": true
+      },
+      {
+        "id": "img_garden_002",
+        "type": "IMAGE",
+        "url": "https://via.placeholder.com/800x600?text=Renovated+Unit",
+        "altText": "Recently renovated apartment unit"
+      }
+    ],
+    "brokerContact": {
+      "name": "Jennifer Martinez",
+      "agency": "Residential Realty Partners",
+      "phone": "+1-804-555-3456",
+      "email": "j.martinez@residential.example.com",
+      "licenseNumber": "VA-778899"
+    },
+    "metadata": {
+      "createdDate": "2023-10-20T12:00:00Z",
+      "lastUpdated": "2023-12-07T10:45:00Z",
+      "views": 1200
+    }
+  }
+]

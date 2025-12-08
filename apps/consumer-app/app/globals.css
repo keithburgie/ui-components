@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@import "@ui/design-system/tokens";
+
+/* Configure Tailwind to scan the Design System package */
+@source "../../../libraries/design-system/src/**/*.{ts,tsx}";
+
+/* Scrollbar styling - adapts to dark mode */
+* {
+  scrollbar-color: var(--color-border-default) var(--color-surface-base);
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-surface-base);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--color-border-default);
+  border-radius: 5px;
+  border: 2px solid var(--color-surface-base);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-hover);
+}
+
+@theme {
+  --font-sans: "Geist", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+}
+
+/* Custom animations for smooth transitions */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out-right {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.6s ease-out;
+}
+
+/* Smooth transitions for interactive elements - be selective */
+button,
+a,
+.transition-smooth {
+  transition-property:
+    transform, opacity, background-color, border-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+/* Smooth horizontal scrolling on mobile */
+@media (max-width: 768px) {
+  .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Hide scrollbar while maintaining scroll functionality */
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hover overlay - only show on devices that support hover (mouse, not touch) */
+@media (hover: hover) {
+  .hover-overlay {
+    pointer-events: auto;
+  }
+}
+
+@media (hover: none) {
+  .hover-overlay {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import "./primitives.css";
+@import "./semantics.css";
+
+@layer base {
+  body {
+    background-color: var(--color-surface-base);
+    color: var(--color-body-content);
+  }
+
+  html {
+    scrollbar-color: var(--color-primary) transparent;
+  }
+}

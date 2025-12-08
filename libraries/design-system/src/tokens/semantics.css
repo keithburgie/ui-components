@@ -1,0 +1,135 @@
+/* Enable light-dark() support by defining the scheme. */
+:root {
+  color-scheme: light dark;
+}
+.dark {
+  color-scheme: dark;
+}
+
+@theme {
+  /* Body */
+  --color-body: light-dark(var(--color-gray-50), var(--color-gray-950));
+  --color-body-content: light-dark(
+    var(--color-gray-700),
+    var(--color-gray-300)
+  );
+
+  /* Surfaces */
+  --color-surface-base: light-dark(
+    var(--color-neutral-100),
+    var(--color-neutral-900)
+  );
+  --color-surface-card: light-dark(white, var(--color-neutral-800));
+  --color-skeleton-base: light-dark(
+    var(--color-neutral-200),
+    var(--color-neutral-700)
+  );
+
+  /* Borders */
+  --color-border-default: light-dark(
+    var(--color-neutral-200),
+    var(--color-neutral-700)
+  );
+  --color-border-muted: light-dark(
+    var(--color-neutral-100),
+    var(--color-neutral-800)
+  );
+  --color-border-hover: light-dark(
+    var(--color-slate-400),
+    var(--color-neutral-500)
+  );
+  --color-focus-ring: var(--color-brand-blue);
+
+  /* --- Variant Colors --- */
+
+  /* Primary */
+  --color-primary: light-dark(var(--color-brand-blue), oklch(0.55 0.14 250));
+  --color-primary-hover: light-dark(
+    var(--color-brand-blue-600),
+    oklch(0.5 0.14 250)
+  );
+  --color-primary-content: white;
+
+  /* Secondary */
+  --color-secondary: light-dark(white, var(--color-neutral-800));
+  --color-secondary-hover: light-dark(
+    var(--color-neutral-100),
+    var(--color-neutral-700)
+  );
+  --color-secondary-content: light-dark(
+    var(--color-slate-900),
+    var(--color-slate-100)
+  );
+  --color-secondary-border: light-dark(
+    var(--color-neutral-200),
+    var(--color-neutral-600)
+  );
+
+  /* Accent */
+  --color-accent: var(--color-accent-500);
+  --color-accent-hover: var(--color-accent-600);
+  --color-accent-content: white;
+
+  /* Neutral */
+  --color-neutral: var(--color-neutral-100);
+  --color-neutral-hover: var(--color-neutral-50);
+  --color-neutral-content: var(--color-neutral-500);
+
+  /* Ghost */
+  --color-ghost: transparent;
+  --color-ghost-hover: light-dark(
+    var(--color-neutral-100),
+    var(--color-neutral-800)
+  );
+  --color-ghost-content: light-dark(
+    var(--color-slate-900),
+    var(--color-slate-100)
+  );
+
+  /* Links */
+  --color-link-default: light-dark(
+    var(--color-brand-blue),
+    oklch(0.7 0.15 250)
+  );
+  --color-link-hover: light-dark(
+    var(--color-brand-blue-600),
+    oklch(0.75 0.18 250)
+  );
+
+  /* --- Intent Colors --- */
+
+  /* Info */
+  --color-info: light-dark(var(--color-blue-500), oklch(0.75 0.08 250));
+  --color-info-content: light-dark(white, oklch(0.3 0.1 250));
+
+  /* Success */
+  --color-success: light-dark(var(--color-green-500), oklch(0.75 0.08 150));
+  --color-success-content: light-dark(white, oklch(0.3 0.1 150));
+
+  /* Warning */
+  --color-warning: light-dark(var(--color-yellow-500), oklch(0.8 0.08 90));
+  --color-warning-content: light-dark(white, oklch(0.25 0.05 90));
+
+  /* Destructive */
+  --color-destructive: light-dark(
+    var(--color-destructive-500),
+    oklch(0.75 0.1 25)
+  );
+  --color-destructive-content: light-dark(white, oklch(0.3 0.12 25));
+
+  /* --- Utility Colors --- */
+
+  /* Muted Text */
+  --color-muted: light-dark(
+    oklch(from var(--color-slate-900) l c h / 0.6),
+    oklch(from var(--color-slate-100) l c h / 0.6)
+  );
+  --color-muted-content: light-dark(
+    var(--color-slate-900),
+    var(--color-slate-100)
+  );
+
+  /* Inverted */
+  --color-inverted: oklch(1 0 0 / 0.9);
+  --color-inverted-content: var(--color-slate-900);
+}

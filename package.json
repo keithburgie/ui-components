@@ -2,8 +2,9 @@
   "name": "costar-portfolio",
   "private": true,
   "scripts": {
+    "test": "turbo run test",
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "turbo run dev watch",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
@@ -19,6 +20,7 @@
   "packageManager": "npm@11.6.4",
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "libraries/*",
+    "tooling/*"
   ]
 }
