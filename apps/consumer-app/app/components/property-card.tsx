@@ -152,7 +152,7 @@ export function PropertyCard({
             <Text
               size={compact ? "base" : "lg"}
               weight="bold"
-              className="text-success-content"
+              className="text-success"
             >
               {priceDisplay}
               {priceUnit && (

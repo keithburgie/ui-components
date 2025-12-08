@@ -222,7 +222,7 @@ export function PropertyDetail({ property, onBack }: PropertyDetailProps) {
                       size="md"
                       className="inline-flex items-center px-3 py-1.5"
                     >
-                      <Check className="size-4 mr-1.5 text-success-content" />
+                      <Check className="size-4 mr-1.5 text-success" />
                       {amenity}
                     </Badge>
                   ))}
