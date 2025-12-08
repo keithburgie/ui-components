@@ -17,7 +17,7 @@ export function Header() {
           {/* Right side: Links and Theme Switcher */}
           <Flex className="items-center gap-2 md:gap-4">
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/keithburgie/"
               target="_blank"
               rel="noopener noreferrer"
               flush={false}
@@ -26,7 +26,7 @@ export function Header() {
               LinkedIn
             </Link>
             <Link
-              href="https://github.com"
+              href="https://github.com/keithburgie/ui-components"
               target="_blank"
               rel="noopener noreferrer"
               flush={false}
