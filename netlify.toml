@@ -1,0 +1,33 @@
+# Netlify configuration for monorepo deployment
+# This repo deploys TWO separate Netlify sites:
+#   1. Design System Storybook (libraries/design-system)
+#   2. Consumer App (apps/consumer-app)
+#
+# In Netlify UI, set each project's "Base directory" accordingly.
+
+[build]
+  # Default build command - overridden per-site in Netlify UI
+  command = "npm ci && npx turbo build"
+  
+[build.environment]
+  # Pin Node version for consistent builds
+  NODE_VERSION = "20"
+  # Ensure npm installs optional deps (needed for native binaries)
+  NPM_FLAGS = "--include=optional"
+  # Skip Turbo telemetry prompts in CI
+  TURBO_TELEMETRY_DISABLED = "1"
+
+# ------------------------------------------------------------------
+# Storybook Site Configuration
+# In Netlify UI, set Base directory: libraries/design-system
+# ------------------------------------------------------------------
+[[redirects]]
+  # Storybook SPA routing (applies when base is libraries/design-system)
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# ------------------------------------------------------------------
+# Next.js Consumer App - uses @netlify/plugin-nextjs automatically
+# In Netlify UI, set Base directory: apps/consumer-app
+# ------------------------------------------------------------------
