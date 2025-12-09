@@ -34,14 +34,25 @@ export function PropertiesLayout({ properties }: PropertiesLayoutProps) {
       setIsTransitioning(false);
     }
   }, [hasSelection]);
+  // Only lock body scroll on desktop (md+) to enable split-view
+  // On mobile, we want the detail view to scroll independently
   React.useEffect(() => {
-    if (hasSelection) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+
+    const updateOverflow = () => {
+      if (hasSelection && mediaQuery.matches) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "";
+      }
+    };
+
+    updateOverflow();
+    mediaQuery.addEventListener("change", updateOverflow);
+
     return () => {
       document.body.style.overflow = "";
+      mediaQuery.removeEventListener("change", updateOverflow);
     };
   }, [hasSelection]);
 
@@ -57,7 +68,7 @@ export function PropertiesLayout({ properties }: PropertiesLayoutProps) {
     <Flex
       className={`flex-col md:flex-row overflow-x-hidden ${
         hasSelection
-          ? "h-[calc(100vh-4rem)] overflow-hidden"
+          ? "min-h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)] md:overflow-hidden"
           : "min-h-[calc(100vh-4rem)]"
       }`}
     >

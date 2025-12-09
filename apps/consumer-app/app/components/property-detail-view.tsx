@@ -21,7 +21,7 @@ export function PropertyDetailView({
       className={twMerge(
         "relative",
         isVisible
-          ? "flex-1 opacity-100 pb-20 md:pb-0 md:h-full md:overflow-y-auto"
+          ? "flex-1 opacity-100 pb-(--mobile-sidebar-height) md:pb-0 md:h-full overflow-y-auto"
           : "h-0 md:h-auto md:w-0 opacity-0 overflow-hidden"
       )}
       style={{

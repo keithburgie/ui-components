@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @import "@ui/design-system/tokens";
 
+/* Layout constants */
+:root {
+  --mobile-sidebar-height: 13rem;
+}
+
 /* Configure Tailwind to scan the Design System package */
 @source "../../../libraries/design-system/src/**/*.{ts,tsx}";
 
