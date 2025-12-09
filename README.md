@@ -24,8 +24,8 @@ npx turbo run dev
 
 This concurrently launches:
 
-- **Consumer App:** [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000 "null") (Next.js Dashboard)
-- **Design System Workbench:** [http://localhost:6006](https://www.google.com/search?q=http://localhost:6006 "null") (Storybook)
+- **Consumer App:** [http://localhost:3000](http://localhost:3000) (Next.js Dashboard)
+- **Design System Workbench:** [http://localhost:6006](http://localhost:6006) (Storybook)
 - **Library Watch:** Automatically rebuilds the design system on file changes.
 
 ### 3. Other Commands

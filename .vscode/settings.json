@@ -1,0 +1,32 @@
+{
+  // TypeScript settings - show errors in real-time
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  // Validate TypeScript in real-time
+  "typescript.validate.enable": true,
+  "javascript.validate.enable": true,
+
+  // Show problems inline
+  "problems.decorations.enabled": true,
+
+  // Auto-run type checking in the background
+  "typescript.tsserver.maxTsServerMemory": 4096,
+
+  // ESLint auto-fix on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // Format with Prettier on save
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Turbo-specific settings
+  "files.watcherExclude": {
+    "**/.turbo": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true
+  }
+}

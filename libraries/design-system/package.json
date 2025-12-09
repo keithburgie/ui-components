@@ -19,6 +19,7 @@
     "generate:component": "turbo gen react-component",
     "generate:exports": "node scripts/generate-exports.mjs",
     "check-types": "tsc --noEmit",
+    "check-types:watch": "tsc --noEmit --watch --preserveWatchOutput",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },

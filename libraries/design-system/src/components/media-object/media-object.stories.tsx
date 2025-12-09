@@ -132,7 +132,10 @@ export const SidebarStressTest: Story = {
           className="bg-surface-card shadow-sm rounded-md overflow-hidden"
         >
           <MediaObject.Media>
-            <MediaObject.Image src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80" />
+            <MediaObject.Image
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80"
+              alt="Sidebar Item"
+            />
           </MediaObject.Media>
           <MediaObject.Content>
             <Heading level={4}>Sidebar Item</Heading>
@@ -152,7 +155,10 @@ export const SidebarStressTest: Story = {
           className="bg-surface-card shadow-sm rounded-md overflow-hidden"
         >
           <MediaObject.Media>
-            <MediaObject.Image src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80" />
+            <MediaObject.Image
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80"
+              alt="Main Content Item"
+            />
           </MediaObject.Media>
           <MediaObject.Content>
             <Heading level={3}>Main Content Item</Heading>
