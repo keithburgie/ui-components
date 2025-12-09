@@ -14,9 +14,8 @@ const fontMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "CoStar Demo",
-  description:
-    "Design system and consumer app as a real estate asset explorer.",
+  title: "UI Components Demo",
+  description: "Design system and consumer app as a UI components demo.",
 };
 
 export default function RootLayout({

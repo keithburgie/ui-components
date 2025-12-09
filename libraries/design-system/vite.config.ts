@@ -12,7 +12,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/components/index.tsx"),
-      name: "CostarDesignSystem",
+      name: "UIDesignSystem",
       fileName: "index",
       formats: ["es"], // ESM format for modern bundlers
     },

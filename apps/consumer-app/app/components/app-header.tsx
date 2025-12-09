@@ -11,7 +11,7 @@ export function Header() {
       <Box className="mx-auto px-6 py-2.5">
         <Flex className="items-center justify-between">
           <Heading level={4} className="whitespace-nowrap">
-            CoStar Demo
+            UI Components Demo
           </Heading>
 
           {/* Right side: Links and Theme Switcher */}
