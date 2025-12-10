@@ -1,7 +1,5 @@
 # Scalable UI: Tailwind v4 & Design Tokens
 
-> **Note to Reviewers:** This project was created specifically to demonstrate the skills required for the Senior UI Engineer role at CoStar Group, focusing on **scalable component architecture**, **semantic design tokens** (Tailwind v4), and **accessibility**.
-
 ## ⚡️ Quick Start
 
 This project uses **Turborepo** to orchestrate the monorepo.
